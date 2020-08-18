@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main(){
+	int dias;
+	float ganancia , salario;
+
+	cout<< "Ingrese la cantidad de dias que trabajo al mes "<<endl;
+	cin>> dias;
+
+	cout<<"ingrese su ganancia por jornada "<<endl;
+	cin>> ganancia;
+	salario= ganancia*dias;
+
+	cout<< "su salario es de : "<<salario;
+
+
+	getch();
+	return 0;
+}
