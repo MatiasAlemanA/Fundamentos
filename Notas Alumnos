@@ -1,0 +1,56 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int alumno,p1,p2,p3;
+	float parciales,k,practica,final,alumno2;
+	char curso[2];
+	cout<<"NOTAS FINALES DEL CURSO "<<endl<<endl;
+	cout<<"ingrese el paralelo ";
+	cin>>curso;
+	cout<<" \ el paralelo "<<curso<<" tiene 32 alumnos"<<endl;
+	cout<<"ingrese el alumnos segun su numero de Lista ";
+	cin>>alumno;
+	while(alumno>0 && alumno<=32){
+	k=0;
+	 cout<<"ingrese la nota de sus tres parciales"<<endl;
+	 cin>>p1;
+	 cin>>p2;
+	 cin>>p3;
+	 parciales= ((p1+p2+p3)/3)*0.4;
+	 cout<<"la nota de los examenes parciales es de : "<<parciales<<" [puntos acumulativos]"<<endl;
+	 k=k+parciales;
+	 cout<<"ingrese la nota practica"<<endl;
+	 cin>>practica;
+	 practica= practica *0.2;
+	 cout<<"la nota practica es de : "<<practica<<" [puntos acumulativos] "<<endl;
+	 k=k+parciales;
+	cout<<"ingrese la nota del examen final";
+	cin>>final;
+	final=final*0.4;
+	cout<<"Su nota del examen final es de : "<< final<<" [puntos acumulativos]"<<endl<<endl;
+	k=k+final;
+	
+	cout<<"SU NOTA FINAL ES DE : "<< k<<endl;
+	if(k>50){
+	cout<<"felicidades aprovaste el curso :)"<<endl;
+
+	}else {
+	cout<<"Usted ha perdido la materia, nos vemos en verano "<<endl;
+	}
+	cout<< "-----------------------------------------------------------"<<endl<<endl<<endl;
+
+	cout<<"igrese los datos de otro alumo segun su numero de lista "<<endl;
+	cin>>alumno;
+		
+	}
+
+
+getch();
+return 0;
+
+}
