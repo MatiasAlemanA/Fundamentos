@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main() {
+	int h,m,s;
+	cout<<"ingrese la hora (en formato de 24h) : ";
+	cin>>h;
+	cout<<"ingrese el minuto (en formato de 24h) : ";
+	cin>>m;
+	cout<<"ingrese el segundo (en formato de 24h) : ";
+	cin>>s;
+	if(h>0 && h<24){
+		if(m>0 && m<60){
+			if(s>0 && s<60){
+			cout<<"en formato 24H la horas es : "<<h<< ":"<<m<<":"<<s<<endl;
+			     if(h>0 && h<13){
+				 cout<<"en formato 12H la horas es : "<<h<<":"<<m<<":"<<s<< " AM";
+				 }
+				 else {
+				 h=h-12;
+				 cout<<"en formato 12H la horas es : "<<h<<":"<<m<<":"<<s<< " PM";
+				 }
+			}
+			else {
+			cout<<"error";
+			}
+		}
+		else {
+		cout<<"error";
+		}
+	
+	} 
+	else {
+	cout<< "Error" ;
+	}
+
+
+		getch();
+return 0;
+}
