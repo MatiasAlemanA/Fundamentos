@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+//ingrese una cantidad n de numeros
+int main(){
+	int n,k=0,suma=0;
+	float num;
+	cout<<"ingrese la cantidad de numeros qe desea ingresar ";
+	cin>>n;
+	while (k<n){
+	
+		k=k+1;
+		cout<<k<<endl;;
+		suma=suma+k;
+		
+	
+	
+	}
+	cout<<"la suma de los primeros "<<n<<" numeros natrales es de : "<<suma<<endl;
+
+
+
+	getch();
+return 0;
+}
