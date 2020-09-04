@@ -1,0 +1,70 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int ham=0,hamqueso=0,papas=0,opc;
+	float soda=0,cuenta,pedidoA=0,pedidoB=0,pedidoC=0,pedidoD=0;
+	do{ 
+		cout<<"----------MENU-----------"<<endl;
+		cout<<"1)Hamburguesas simples :   [Bs.3]"<<endl;
+		cout<<"2)Hamburguesas con queso : [Bs.5]"<<endl;
+		cout<<"3)Papas fritas :           [Bs.2]"<<endl;
+		cout<<"4)Hamburguesas soda :      [Bs. 2.50]"<<endl;
+		cout<<"5) CUENTA TOTAL   :        [        ]"<<endl;
+		cout<<"0) salir"<<endl<<endl;
+		cin>>opc;
+		switch(opc){
+		case 1 : cout<<"cuantas hamburguesas simples desea? ";
+			     cin>> ham;
+				 pedidoA= ham*3;
+				 cout<<"[Bs.]"<<pedidoA<<endl;
+				 break;
+		case 2 : cout<<"cuantas hamburguesas con queso desea? ";
+			    cin>>hamqueso;
+				pedidoB= hamqueso*5;
+				cout<<"[Bs.]"<<pedidoB<<endl;
+				break;
+				
+		case 3 : cout<<"cuantas papas fritas desea? ";
+			    cin>>papas;
+				pedidoC= papas*2; 
+				cout<<"[Bs.]"<<pedidoC<<endl;
+				break;
+				
+				
+		case 4 : cout<<"cuantas sodas desea ? ";
+			     cin>> soda;
+				 pedidoD=soda*2.50;
+				 cout<<"[Bs.]"<<pedidoD<<endl;
+				 break;
+
+		case 5: cout<<"[informacion del pedido]"<<endl;
+			    cout<<"hamburguesas simples :  Bs"<<pedidoA<<endl;
+				cout<<"hamburguesas con queso: Bs"<<pedidoB<<endl;
+				cout<<"papas fritas :          Bs"<<pedidoC<<endl;
+				cout<<"soda :                  Bs."<<pedidoD<<endl<<endl;
+			    cuenta= pedidoA+pedidoB+pedidoC+pedidoD;
+				cout<<"SU CUENTA TOTAL ES DE : "<<cuenta<<endl<<endl<<endl;
+				break;
+
+		case 0: cout<<"salir"; break;
+
+		default : cout<<"opciion invalida, digite de nuevo";
+		}
+
+
+
+	
+	
+	
+	
+	 }while (opc != 0);
+
+
+return 0;
+}
+
