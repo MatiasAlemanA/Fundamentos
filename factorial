@@ -1,0 +1,22 @@
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int factorial=1,k=1,num;
+	cout<<"ingrese un numero para sacar su factorial ";
+	cin>>num;
+
+	while(k<=num){
+	
+		factorial= factorial*k;
+		k=k+1;
+	}
+	cout<<"el factroail de "<<num <<"  es : "<<factorial;
+
+	getch();
+
+return 0;
+}
