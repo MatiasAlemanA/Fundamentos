@@ -1,0 +1,44 @@
+//NUMERO MATOY ENTRE TRES NUMEROS
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int num1,num2,num3,mayor,menor;
+
+	cout<<"ingrese el primer numero"<<endl;
+	cin>>num1;
+	cout<<"ïngrese el segundo numero"<<endl;
+	cin>>num2;
+	cout<<"ingrese el tercer numero"<<endl;
+	cin>>num3;
+	if(num1>num2 && num1>num3){
+	cout<<"el numero mayor es : "<<num1;
+	}
+	else if(num2>num1 && num2>num3){
+	cout<<"el numero mayor es : "<<num2;
+	}
+	else if(num3>num1 && num3>num1){
+	cout<<"el numero mayor  es : "<<num3;
+	}
+	else if(num1>num3 && num1==num2){
+	cout<<"el numero mayor  es : "<<num1;
+	}
+	else if(num2>num1 && num2==num3){
+	cout<<"el numero mayor  es : "<<num2;
+	}
+	else if(num1>num2 && num1==num3){
+	cout<<"el numero mayor  es : "<<num3;
+	}
+	else {
+	cout<<"los tres numeros son iguales";
+	}
+	
+	
+	
+getch();
+return 0;
+}
