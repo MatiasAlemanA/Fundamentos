@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int largo, ancho;
+	float arena=0.5, pared;
+	cout<<"ingrese la altura la altura de la pared "<<endl;
+	cin>>largo;
+	cout<<"ingrese el ancho de la pared"<<endl;
+	cin>> ancho;
+	pared =(largo* ancho)*arena;
+	cout<<"usted necestia "<<pared<<" m3 de arena para realizar la pared";
+
+
+getch();
+return 0;
+
+}
