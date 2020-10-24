@@ -1,0 +1,77 @@
+#include "stdafx.h"
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main() {
+	int h1,h2,m1,m2,s1,s2,h,m,s,seg1,seg2,segundos;
+	cout<<"ingrese hora 1.- ";
+	cin>>h1;
+	cout<<"ingrese minuto 1.- ";
+	cin>>m1;
+	cout<<"ingrese segundo 1.- ";
+	cin>>s1;
+	cout<<"ingrese hora 2.- ";
+	cin>>h2;
+	cout<<"ingrese minuto 2.- ";
+	cin>>m2;
+	cout<<"ingrese segundo 2.- ";
+	cin>>s2;
+	if (h1>0 && h1<24){
+		if(m1>0 && m1<60){
+			if(s1>0 && s1<60){
+				cout<<"la hora 1 es : "<<h1<<"H: "<<m1<<"M: "<<s1<<"S"<<endl;
+				if(h2>0 && h2<24){
+					if(m2>0 && m2<60){
+						if(s2>0 && s2<60){
+						cout<<"la hora 2 es : "<<h1<<"H: "<<m1<<"M: "<<s1<<"S"<<endl;
+						seg1= h1*3600;
+						seg1= seg1+(m1*60);
+						seg1= seg1+s1;
+						cout<<"la primera hora tiene : "<<seg1<<" segundos"<<endl;
+
+						seg2= h2*3600;
+						seg2= seg2+(m2*60);
+						seg2= seg2+s2;
+						cout<<"la segunda hora tiene : "<<seg2<<" segundos"<<endl;
+						segundos= abs(seg1-seg2);
+						h=segundos/3600;
+						segundos=segundos%3600;
+						m= segundos/60;
+						s=segundos%60;
+						cout<<"LA DIFERENCIA DE HORAS ES DE :"<<h<<" H: "<<m<<" M: "<<s<<" S "<<endl;
+						}
+						else{
+						cout<<"error";
+						}
+					}
+					else {
+					cout<<"error";
+					}
+				}
+				else {
+				cout<<"error";
+				}
+
+			}
+			else {
+			cout<<"error";
+			}
+		}
+		else 
+		{
+		cout<<"error";
+		}
+	}
+	else {
+	cout<<"error";
+	}
+
+
+
+		getch();
+return 0;
+}
