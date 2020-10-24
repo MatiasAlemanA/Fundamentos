@@ -1,0 +1,40 @@
+/suma,mayor y menor mientras sean numeros positivos
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main(){
+	int mayor,menor,num,suma=0,k=0;
+	float promedio;
+	
+	cout<<"ingrese un numero"<<endl;
+	   cin>>num;
+	   mayor=num;
+	   menor=num;
+	do{
+		suma=suma+num;
+	   if(mayor<num){
+	   mayor=num;
+	   }
+	   if(menor>num){
+	   menor=num;
+	   }
+	   k=k+1;
+	   
+	   cout<<"ingrese un numero"<<endl;
+	   cin>>num;
+
+	}while (num>=0);
+
+	cout<<"el mayor es "<<mayor<<endl;
+	cout<<"el menor es "<<menor<<endl;
+	promedio= suma/k;
+	cout<<"el promedio es : "<<promedio;
+
+
+getch();
+return 0;
+}
