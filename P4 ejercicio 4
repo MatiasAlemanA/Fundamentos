@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+
+int capicua(int);
+
+int main(){
+	int n,ninv;
+	cout<<"ingrese un numero"<<endl;
+	cin>>n;
+	ninv=capicua(n);
+	cout<<ninv;
+	if(n==ninv){
+	cout<<"  El nuemro es capicua"<<endl;
+
+	}else {
+	cout<<"  el nuemr ono es capicua"<<endl;
+	}
+	
+	getch();
+return 0;
+}
+
+
+int capicua(int n){
+int numinv=0,res;
+while(n>=1){
+	res=n%10;
+	numinv=numinv*10+res;
+	n=n/10;
+
+}
+return numinv;
+
+}
+
