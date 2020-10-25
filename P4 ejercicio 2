@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int invertir(int n);
+
+int main(){
+int n,ninv;
+cout<<"ingrese un numero "<<endl;
+cin>>n;
+ninv= invertir(n);
+
+
+	getch();
+return 0;
+}
+
+int invertir(int n){
+int numinv;
+    while(n>=1){
+	numinv=n%10;
+	cout<<numinv;
+	n=n/10;
+
+	}
+	return numinv;
+}
