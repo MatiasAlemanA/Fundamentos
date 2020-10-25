@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{
+	int N, r;
+	cout<< "Programa que comprueba si alguno de sus dígitos no corresponden a la base 8"<<endl; 
+	cout<<"Ingresa un numero entero: ";
+	cin>>N;
+	while (N>0){
+	r=N%10;
+	N=N/10;
+	
+	
+	if(r>=8){
+	cout<<"No coresponde a la base 8";
+	getch ();
+	break;
+	}
+	}
+
+	
+	getch ();
+	return 0;
+}
